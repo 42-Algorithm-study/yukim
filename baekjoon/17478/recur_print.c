@@ -30,9 +30,16 @@ int	recur_print(int input, int count)
 	printf("라고 답변하였지.\n");
 }
 
-int	main(void) {
+int	main(void)
+{
+	int N;
 
-	printf("어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.\n");
-	recur_print(4, 4);
+	scanf("%d", &N);
+	if (0 < N && N <51)
+	{
+		printf("어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.\n");
+		recur_print(N, N);
+	}
+	printf("Input value must be 1 <= N <= 50\n");
 	return 0;
 }
