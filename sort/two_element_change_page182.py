@@ -1,12 +1,12 @@
-N, K = input().split()
-N = int(N)
-K = int(K)
+N, K = map(int, input().split())
+# N = int(N)
+# K = int(K)
 
-A = input().split()
-B = input().split()
-for i in range(N):
-    A[i] = int(A[i])
-    B[i] = int(B[i])
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+# for i in range(N):
+#     A[i] = int(A[i])
+#     B[i] = int(B[i])
 A.sort()
 B.sort(reverse=True)
 for i in range(K):
